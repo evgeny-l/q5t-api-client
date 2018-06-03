@@ -1,0 +1,32 @@
+{
+    "name": "evgeny-l/q5t-api-client",
+    "description": "Questify Q5T URL Shortener API Client for Laravel 5.",
+    "keywords": ["questify", "q5t", "api", "client", "auth"],
+    "license": "Questify",
+    "authors": [
+        {
+            "name": "Evgeny Leksunin",
+            "email": "evgeny.msc@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "^5.0,<5.6",
+        "guzzlehttp/guzzle": "^6"
+    },
+    "require-dev": {
+        "illuminate/config": "^5.0,<5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "EvgenyL\\Q5TAPIClient\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EvgenyL\\Q5TAPIClient\\Q5TAPIClientServiceProvider"
+            ]
+        }
+    }
+}
