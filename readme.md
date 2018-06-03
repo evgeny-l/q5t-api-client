@@ -39,10 +39,10 @@ Update `.env` file with your API access token:
 Q5T_API_ACCESS_TOKEN=PLACE_YOUR_TOKEN_HERE
 ```
 
-Update `app.php` config file:
+Update `app.php` config file (for Laravel <5.5):
 ```
     'providers' => [
         //...
-        ShowHeroes\VideoLibraryAPI\VideoLibraryAPIClientServiceProvider::class,
+        \EvgenyL\Q5TAPIClient\Q5TAPIClientServiceProvider::class,
     ],
 ```
