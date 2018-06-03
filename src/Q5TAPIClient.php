@@ -24,7 +24,7 @@ class Q5TAPIClient
      * @param integer   $externalUserId
      * @return null|string
      */
-    public function getShortURL($URL, $externalUserId)
+    public function getShortURL($URL, $externalUserId = 0)
     {
         try {
             $response = $this->client->post('urls', [
