@@ -46,4 +46,17 @@ class Q5TAPIClient
         return $shortURL;
     }
 
+    /**
+     * Returns short URL for beacon activation.
+     *
+     * @param string $beaconUID
+     * @return string
+     */
+    public function getShortBeaconURL($beaconUID)
+    {
+        $baseAPIURL = config('services.q5t_api.api_url');
+        $URLParts = parse_url($baseAPIURL);
+        return $URLParts['scheme'].'://'.$URLParts['host'].'/b/'.$beaconUID;
+    }
+
 }
